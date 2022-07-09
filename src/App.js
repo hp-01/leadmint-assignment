@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
   // To maintain the pagination
   const [start, setStart] = useState(0);
-  const limit = 5;
+  const limit = 10;
 
   useEffect(function () {
     axios.post(" https://cashluck.xyz/api/v1/tasksfetch").then(function ({ data }) {
